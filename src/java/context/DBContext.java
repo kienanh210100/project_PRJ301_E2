@@ -5,6 +5,8 @@ import java.sql.DriverManager;
 
 public class DBContext {
 
+    protected Connection connection;
+
     /*USE BELOW METHOD FOR YOUR DATABASE CONNECTION FOR BOTH SINGLE AND MULTILPE SQL SERVER INSTANCE(s)*/
  /*DO NOT EDIT THE BELOW METHOD, YOU MUST USE ONLY THIS ONE FOR YOUR DATABASE CONNECTION*/
     public Connection getConnection() throws Exception {
