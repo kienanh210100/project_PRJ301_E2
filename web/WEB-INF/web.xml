@@ -16,6 +16,10 @@
         <servlet-name>forgetPasswordController</servlet-name>
         <servlet-class>controller.forgetPasswordController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>EditAccountController</servlet-name>
+        <servlet-class>controller.EditAccountController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomeController</servlet-name>
         <url-pattern>/home</url-pattern>
@@ -31,6 +35,10 @@
     <servlet-mapping>
         <servlet-name>forgetPasswordController</servlet-name>
         <url-pattern>/forget</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditAccountController</servlet-name>
+        <url-pattern>/editAccount</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
