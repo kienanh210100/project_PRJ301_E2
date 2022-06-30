@@ -12,14 +12,14 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpSession;
+import java.util.List;
 import model.Account;
 
 /**
  *
  * @author HP
  */
-public class LoginController extends HttpServlet {
+public class ManagerAccountController extends HttpServlet {
    
     /** 
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
@@ -31,21 +31,10 @@ public class LoginController extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        String user = request.getParameter("Username");
-        String pass = request.getParameter("Password");
         AcountDBContext adb = new AcountDBContext();
-        Account a = adb.login(user, pass);
-        if (a==null) {
-            request.setAttribute("mess", "Wrong user or pass");
-            request.getRequestDispatcher("login.jsp").forward(request, response);           
-        }else if (a.isActive()== false) {
-            request.setAttribute("mess", "Account has been banned");
-            request.getRequestDispatcher("login.jsp").forward(request, response);
-        }else{
-            HttpSession session = request.getSession();
-            session.setAttribute("acc", a);
-            response.sendRedirect("home");
-        }
+        List<Account> accounts = adb.getAllAccount();
+        request.setAttribute("accounts",accounts);
+        request.getRequestDispatcher("ManagerCustomer.jsp").forward(request, response);
     } 
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

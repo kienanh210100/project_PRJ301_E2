@@ -20,6 +20,14 @@
         <servlet-name>EditAccountController</servlet-name>
         <servlet-class>controller.EditAccountController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ManagerAccountController</servlet-name>
+        <servlet-class>controller.ManagerAccountController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ManagerController</servlet-name>
+        <servlet-class>controller.ManagerController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomeController</servlet-name>
         <url-pattern>/home</url-pattern>
@@ -39,6 +47,14 @@
     <servlet-mapping>
         <servlet-name>EditAccountController</servlet-name>
         <url-pattern>/editAccount</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ManagerAccountController</servlet-name>
+        <url-pattern>/accountController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ManagerController</servlet-name>
+        <url-pattern>/manager</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
