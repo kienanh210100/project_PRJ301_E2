@@ -78,12 +78,12 @@ public class forgetPasswordController extends HttpServlet {
         Account account = adb.checkAccountExist(user);
         if (account == null) {
             request.setAttribute("mess", "Account does not exist!");
-            request.getRequestDispatcher("change-newpassword.jsp").forward(request, response);
+            request.getRequestDispatcher("changepassword.jsp").forward(request, response);
             return;
         }
         if (!pass.equals(repass)) {
             request.setAttribute("mess", "password does not match!");
-            request.getRequestDispatcher("change-newpassword.jsp").forward(request, response);
+            request.getRequestDispatcher("changepassword.jsp").forward(request, response);
             return;
         }
         if (pass.equals(repass)) {
