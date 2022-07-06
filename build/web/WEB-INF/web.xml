@@ -28,6 +28,10 @@
         <servlet-name>ManagerController</servlet-name>
         <servlet-class>controller.ManagerController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ManagerCategoryController</servlet-name>
+        <servlet-class>controller.ManagerCategoryController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomeController</servlet-name>
         <url-pattern>/home</url-pattern>
@@ -55,6 +59,10 @@
     <servlet-mapping>
         <servlet-name>ManagerController</servlet-name>
         <url-pattern>/manager</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ManagerCategoryController</servlet-name>
+        <url-pattern>/ManagerCategoryController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
