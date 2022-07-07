@@ -32,6 +32,10 @@
         <servlet-name>ManagerCategoryController</servlet-name>
         <servlet-class>controller.ManagerCategoryController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>EditCategoryController</servlet-name>
+        <servlet-class>controller.EditCategoryController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomeController</servlet-name>
         <url-pattern>/home</url-pattern>
@@ -63,6 +67,10 @@
     <servlet-mapping>
         <servlet-name>ManagerCategoryController</servlet-name>
         <url-pattern>/ManagerCategoryController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditCategoryController</servlet-name>
+        <url-pattern>/editCategory</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
