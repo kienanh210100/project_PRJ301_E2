@@ -76,6 +76,26 @@
         <servlet-name>LoadController</servlet-name>
         <servlet-class>controller.LoadController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AddProductController</servlet-name>
+        <servlet-class>controller.AddProductController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteProductController</servlet-name>
+        <servlet-class>controller.DeleteProductController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditProductController</servlet-name>
+        <servlet-class>controller.EditProductController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoadAccountController</servlet-name>
+        <servlet-class>controller.LoadAccountController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SearchController</servlet-name>
+        <servlet-class>controller.SearchController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomeController</servlet-name>
         <url-pattern>/home</url-pattern>
@@ -151,6 +171,26 @@
     <servlet-mapping>
         <servlet-name>LoadController</servlet-name>
         <url-pattern>/load</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddProductController</servlet-name>
+        <url-pattern>/addProduct</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteProductController</servlet-name>
+        <url-pattern>/deleteProduct</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditProductController</servlet-name>
+        <url-pattern>/editProduct</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoadAccountController</servlet-name>
+        <url-pattern>/loadAccount</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchController</servlet-name>
+        <url-pattern>/search</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
