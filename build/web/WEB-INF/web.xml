@@ -96,6 +96,22 @@
         <servlet-name>SearchController</servlet-name>
         <servlet-class>controller.SearchController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DeleteOrderDetailController</servlet-name>
+        <servlet-class>controller.DeleteOrderDetailController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DetailController</servlet-name>
+        <servlet-class>controller.DetailController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditOrderController</servlet-name>
+        <servlet-class>controller.EditOrderController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ManagerOrderController</servlet-name>
+        <servlet-class>controller.ManagerOrderController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomeController</servlet-name>
         <url-pattern>/home</url-pattern>
@@ -191,6 +207,22 @@
     <servlet-mapping>
         <servlet-name>SearchController</servlet-name>
         <url-pattern>/search</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteOrderDetailController</servlet-name>
+        <url-pattern>/deleteOrderDetail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DetailController</servlet-name>
+        <url-pattern>/detail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditOrderController</servlet-name>
+        <url-pattern>/editOrder</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ManagerOrderController</servlet-name>
+        <url-pattern>/managerOrder</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
